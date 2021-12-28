@@ -29,7 +29,7 @@ int Delete(struct Array *arr, int index)
 int main()
 {
     struct Array arr1 = {{2, 3, 4, 5, 6}, 10, 5};
-    printf("%d", Delete(&arr1, 0));
+    printf("%d", Delete(&arr1, 2));
     Display(arr1);
     return 0;
 }
