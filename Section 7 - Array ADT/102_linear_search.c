@@ -18,6 +18,34 @@ void swap(int *x, int *y)
     *x = *y;
     *y = temp;
 }
+// Linear Search
+//  int LinearSeacrh(struct Array arr, int key)
+//  {
+//      int i;
+//      for (i = 0; i < arr.length; i++)
+//      {
+//          if (key == arr.A[i])
+//              return i;
+//      }
+//      return -1;
+//  }
+
+// Linear Search - Transposition
+// int LinearSearch(struct Array *arr, int key)
+// {
+//     int i;
+//     for (i = 0; i < arr->length; i++)
+//     {
+//         if (key == arr->A[i])
+//         {
+//             swap(&arr->A[i], &arr->A[i-1]);
+//             return i;
+//         }
+//     }
+//     return -1;
+// }
+
+// Linear Search - Move to Front
 int LinearSearch(struct Array *arr, int key)
 {
     int i;
@@ -31,10 +59,12 @@ int LinearSearch(struct Array *arr, int key)
     }
     return -1;
 }
+
 int main()
 {
-    struct Array arr1 = {{2, 23, 14, 5, 6, 9, 8, 12}, 10, 8};
-    printf("%d", LinearSearch(&arr1, 14));
+    struct Array arr1 = {{2, 3, 4, 5, 6, 9, 8, 12}, 10, 8};
+    // printf("%d\n", LinearSearch(arr1, 14));
+    printf("%d", LinearSearch(&arr1, 12));
     Display(arr1);
     return 0;
 }
