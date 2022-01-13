@@ -23,12 +23,13 @@ void create(int A[], int n)
         last = t;
     }
 }
-void Display(struct Node *p)
+
+void RDisplay(struct Node *p)
 {
-    while (p != NULL)
+    if (p != NULL)
     {
+        RDisplay(p->next);
         printf("%d ", p->data);
-        p = p->next;
     }
 }
 
@@ -38,7 +39,7 @@ int main()
     int A[] = {3, 5, 7, 10, 25, 8, 32, 2};
     create(A, 8);
 
-    Display(first);
+    RDisplay(first);
 
     return 0;
 }
