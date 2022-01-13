@@ -28,8 +28,13 @@ void RDisplay(struct Node *p)
 {
     if (p != NULL)
     {
+        // To display in reverse order
         RDisplay(p->next);
         printf("%d ", p->data);
+
+        // To display in normal order
+        // printf("%d ", p->data);
+        // RDisplay(p->next);
     }
 }
 
