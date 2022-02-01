@@ -22,6 +22,17 @@ void create(int A[], int n)
         last = t;
     }
 }
+
+int count(struct Node *p)
+{
+    int l = 0;
+    while (p)
+    {
+        l++;
+        p = p->next;
+    }
+    return l;
+}
 void Display(struct Node *p)
 {
     while (p != NULL)
@@ -34,7 +45,7 @@ void Insert(struct Node *p, int index, int x)
 {
     struct Node *t;
     int i;
-    if (index < 0 || index > _countof(p))
+    if (index < 0 || index > count(p))
         return;
     t = (struct Node *)malloc(sizeof(struct Node));
     t->data = x;
