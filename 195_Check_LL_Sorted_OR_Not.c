@@ -50,6 +50,11 @@ int main()
     int A[] = {20, 30, 40, 50};
     create(A, 5);
 
+    if (isSorted(first))
+        printf("Sorted\n");
+    else
+        printf("Not Sorted\n");
+
     printf("% d\n", isSorted(first));
 
     return 0;
