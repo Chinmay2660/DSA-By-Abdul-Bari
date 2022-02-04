@@ -94,6 +94,14 @@ int main()
 
     Reverse1(first);
     Display(first);
+    printf("\n");
+
+    Reverse2(first);
+    Display(first);
+    printf("\n");
+
+    Reverse3(NULL, first);
+    Display(first);
 
     return 0;
 }
