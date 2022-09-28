@@ -1,5 +1,5 @@
-#include<stdio.h>
-//9 Multiplication 
+#include <stdio.h>
+// 9 Multiplication
 int power(int m, int n)
 {
     if (n == 0)
@@ -7,7 +7,7 @@ int power(int m, int n)
     return power(m, n - 1) * m;
 }
 
-//6 Multiplication
+// 6 Multiplication
 int power1(int m, int n)
 {
     if (n == 0)

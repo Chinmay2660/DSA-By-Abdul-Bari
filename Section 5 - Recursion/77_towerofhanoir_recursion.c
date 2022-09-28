@@ -7,7 +7,6 @@ void TOH(int n, int A, int B, int C)
         printf("(%d,%d)\n", A, C);
         TOH(n - 1, B, A, C);
     }
-    
 }
 int main()
 {

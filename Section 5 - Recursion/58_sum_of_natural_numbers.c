@@ -1,5 +1,5 @@
 #include <stdio.h>
-//Recursive function to calculate sum of natural numbers
+// Recursive function to calculate sum of natural numbers
 int sum(int n)
 {
     if (n == 0)
@@ -11,7 +11,7 @@ int sum(int n)
         return sum(n - 1) + n;
     }
 }
-//Iterative solution
+// Iterative solution
 int Isum(int n)
 {
     int s = 0;
@@ -20,7 +20,7 @@ int Isum(int n)
     {
         s += i;
     }
-    return  s;
+    return s;
 }
 
 int main()

@@ -15,7 +15,7 @@ void funB(int n)
     {
 
         printf("%d ", n);
-        funA(n/2);
+        funA(n / 2);
     }
 }
 

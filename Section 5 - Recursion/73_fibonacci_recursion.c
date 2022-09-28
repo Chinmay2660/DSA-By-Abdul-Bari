@@ -1,19 +1,19 @@
 #include <stdio.h>
 int fib(int n)
 {
-    int t0 = 0, t1 = 1, s = 0, i;
+    int a = 0, b = 1, c = 0, i;
 
     if (n <= 1)
         return n;
 
     for (i = 2; i <= n; i++)
     {
-        s = t0 + t1;
-        t0 = t1;
-        t1 = s;
+        c = a + b;
+        a = b;
+        b = c;
     }
 
-    return s;
+    return c;
 }
 int rfib(int n)
 {
@@ -46,7 +46,7 @@ int main()
         F[i] = -1;
 
     printf("%d \n", mfib(5));
-    printf("%d \n", fib(10));
-    printf("%d \n", rfib(3));
+    printf("%d \n", fib(5));
+    printf("%d \n", rfib(5));
     return 0;
 }
