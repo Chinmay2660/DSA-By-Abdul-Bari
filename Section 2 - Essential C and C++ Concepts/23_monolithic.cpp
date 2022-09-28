@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    int length = 0, breadth = 0;
+    int length, breadth;
     printf("Enter the length and breadth of the rectangle: ");
     cin >> length >> breadth;
 

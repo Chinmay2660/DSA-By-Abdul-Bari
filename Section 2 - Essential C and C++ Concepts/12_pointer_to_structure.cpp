@@ -1,6 +1,6 @@
-#include<iostream>
-#include<stdio.h>
-#include<stdlib.h>
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
 using namespace std;
 
 struct Rectangle
@@ -9,15 +9,16 @@ struct Rectangle
     int breadth;
 };
 
-int main(){
+int main()
+{
     struct Rectangle *p;
     p = new Rectangle;
 
     p->length = 10;
     p->breadth = 20;
 
-    cout<<"Length: "<<p->length<<endl;
-    cout<<"Breadth: "<<p->breadth<<endl;
+    cout << "Length: " << p->length << endl;
+    cout << "Breadth: " << p->breadth << endl;
 
     return 0;
 }

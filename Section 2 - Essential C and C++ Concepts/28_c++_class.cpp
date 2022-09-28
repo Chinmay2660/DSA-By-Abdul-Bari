@@ -59,7 +59,7 @@ public:
 
 int main()
 {
-    Rectangle r(10,5);
+    Rectangle r(10, 5);
 
     cout << "Area: " << r.area() << endl;
     cout << "Perimeter: " << r.perimeter() << endl;

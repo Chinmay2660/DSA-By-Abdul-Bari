@@ -28,8 +28,7 @@ public:
     }
 };
 
-int
-main()
+int main()
 {
     Rectangle r;
 

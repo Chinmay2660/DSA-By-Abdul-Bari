@@ -17,14 +17,14 @@ int perimeter(int length, int breadth)
 
 int main()
 {
-    int length = 0, breadth = 0;
+    int length, breadth;
     printf("Enter the length and breadth of the rectangle: ");
     cin >> length >> breadth;
 
     int a = area(length, breadth);
     int peri = perimeter(length, breadth);
 
-    printf("Area of the rectangle is %d\nPerimeter of the rectangle is %d\n", a ,peri);
+    printf("Area of the rectangle is %d\nPerimeter of the rectangle is %d\n", a, peri);
 
     return 0;
 }
