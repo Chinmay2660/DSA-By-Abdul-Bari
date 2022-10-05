@@ -3,7 +3,8 @@
 #include <stdlib.h>
 using namespace std;
 
-struct Array {
+struct Array
+{
     // int *A;
     int A[20];
     int size;
@@ -23,7 +24,7 @@ void Display(struct Array arr)
 int main()
 {
     // struct Array arr ;
-    struct Array arr = {{2,3,4,5,6},20,6} ;
+    struct Array arr = {{2, 3, 4, 5, 6}, 20, 6};
     // int n, i;
     // printf("Enter size of array: ");
     // scanf("%d", &arr.size);
