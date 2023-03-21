@@ -1,6 +1,6 @@
 # Data Structures and Algorithms by Abdul Bari
 
-This repository contains the code and notes for the Data Structures and Algorithms course by Abdul Bari on YouTube.
+This repository contains the code and notes for the Data Structures and Algorithms course by Abdul Bari on udemy.
 
 ## Course Overview
 
@@ -18,7 +18,7 @@ To get started with the code in this repository, clone the repository to your lo
 git clone https://github.com/Chinmay2660/DSA-By-Abdul-Bari.git
 ```
 
-Then navigate to the directory you're interested in and compile the code using a C or C++ compiler. You can also run the pre-compiled executables in the `bin` directory.
+Then navigate to the directory you're interested in and compile the code using a C or C++ compiler. 
 
 ## Contributing
 
