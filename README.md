@@ -20,6 +20,10 @@ git clone https://github.com/Chinmay2660/DSA-By-Abdul-Bari.git
 
 Then navigate to the directory you're interested in and compile the code using a C or C++ compiler. 
 
+## Additional Notes
+
+Course contents notes will be fully completed and uploaded by First quarter of 2024
+
 ## Contributing
 
 If you find an issue with any of the code or would like to suggest an improvement, please feel free to open an issue or submit a pull request.
