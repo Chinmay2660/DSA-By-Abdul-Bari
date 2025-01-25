@@ -1,51 +1,73 @@
 #include <iostream>
 using namespace std;
 
-class Node
-{
-public:
+// Define the Node structure
+struct Node {
     int data;
-    Node *next;
+    Node* next;
 };
 
-int main()
-{
+// Class to manage the linked list
+class LinkedList {
+private:
+    Node* head;
 
-    int A[] = {3, 5, 7, 10, 15};
+public:
+    // Constructor
+    LinkedList() : head(nullptr) {}
 
-    Node *head = new Node;
+    // Create a linked list from an array
+    void create(int A[], int n) {
+        if (n == 0) return; // If the array is empty, do nothing
 
-    Node *temp;
-    Node *last;
+        head = new Node; // Allocate memory for the first node
+        head->data = A[0];
+        head->next = nullptr;
 
-    head->data = A[0];
-    head->next = nullptr;
-    last = head;
+        Node* last = head;
 
-    // Create a Linked List
-    for (int i = 1; i < sizeof(A) / sizeof(A[0]); i++)
-    {
+        // Create the rest of the nodes
+        for (int i = 1; i < n; i++) {
+            Node* t = new Node;
+            t->data = A[i];
+            t->next = nullptr;
 
-        // Create a temporary Node
-        temp = new Node;
-
-        // Populate temporary Node
-        temp->data = A[i];
-        temp->next = nullptr;
-
-        // last's next is pointing to temp
-        last->next = temp;
-        last = temp;
+            last->next = t; // Link the new node
+            last = t;       // Move last to the new node
+        }
     }
 
-    // Display Linked List
-    Node *p = head;
-
-    while (p != nullptr)
-    {
-        cout << p->data << " -> " << flush;
-        p = p->next;
+    // Display the linked list
+    void display() {
+        Node* p = head;
+        while (p != nullptr) {
+            cout << p->data << " ";
+            p = p->next;
+        }
+        cout << endl;
     }
+
+    // Destructor to free memory
+    ~LinkedList() {
+        Node* current = head;
+        while (current != nullptr) {
+            Node* next = current->next;
+            delete current; // Free the current node
+            current = next;
+        }
+    }
+};
+
+// Main function
+int main() {
+    int A[] = {3, 5, 7, 10, 25, 8, 32, 2};
+    int n = sizeof(A) / sizeof(A[0]);
+
+    LinkedList list;
+    list.create(A, n);
+
+    cout << "Linked List: ";
+    list.display();
 
     return 0;
 }
